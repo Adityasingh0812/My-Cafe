@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews - MY CAFE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MY CAFE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Customer Reviews</h1>
+
+        <div style="background: #f0f0f0; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="rName">Your Name</label>
+                    <input type="text" id="rName" required>
+                </div>
+                <div class="form-group">
+                    <label for="rRating">Rating</label>
+                    <select id="rRating">
+                        <option value="5">5 Stars - Excellent</option>
+                        <option value="4">4 Stars - Good</option>
+                        <option value="3">3 Stars - Average</option>
+                        <option value="2">2 Stars - Poor</option>
+                        <option value="1">1 Star - Terrible</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rText">Your Review</label>
+                    <textarea id="rText" rows="3" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <div id="reviewList">
+            <div class="review-card">
+                <h3>Abjijeet  <small>(5 Stars)</small></h3>
+                <p>"Very tasty food"</p>
+            </div>
+            <div class="review-card">
+                <h3>JATIN<small>(4 Stars)</small></h3>
+                <p>"delicious food."</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MY CAFE. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

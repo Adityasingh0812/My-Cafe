@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - MY CAFE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the login container */
+        .auth-container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: #d35400; /* Primary color */
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MY CAFE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div id="loginSection">
+                <h2>Login</h2>
+                <p>Please login to book a table.</p>
+                <br>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="loginEmail" required placeholder="user@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPass" required placeholder="******">
+                    </div>
+                    <button type="submit">Login</button>
+                    <p style="margin-top: 15px;">Don't have an account? <button type="button" class="toggle-btn" onclick="toggleAuth()">Sign Up</button></p>
+                </form>
+            </div>
+
+            <div id="signupSection" class="hidden">
+                <h2>Create Account</h2>
+                <p>Join us to make reservations easily.</p>
+                <br>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="signupName" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="signupEmail" required placeholder="user@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="signupPass" required placeholder="******">
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <p style="margin-top: 15px;">Already have an account? <button type="button" class="toggle-btn" onclick="toggleAuth()">Login</button></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Savory Fork. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
